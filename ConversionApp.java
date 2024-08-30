@@ -19,8 +19,8 @@ public class ConversionApp
         System.out.println("6. Milliliters to Ounces");
         System.out.println("7. Feet to Yards");
         System.out.println("8. Yards to Feet");
-        System.out.println("9. Inches to Feet");
-        System.out.println("10. Feet to Inches");
+        System.out.println("9. Feet to Inches");
+        System.out.println("10. Inches to Feet");
         //Add 2 more conversions, each both ways, to add choices 7, 8, 9, and 10.
         //You can add even more if you would like.
 
@@ -40,7 +40,7 @@ public class ConversionApp
             System.out.println("Enter Fahrenheit: ");
             double fahrenheit = keyboard.nextDouble();
             keyboard.nextLine();
-            double celsius = fahrenheit - 32 / (9.0 / 5.0);
+            double celsius = (fahrenheit-32) * 5.0/9.0;
             System.out.println(fahrenheit + " degrees fahrenheit is " + celsius + " degrees celsius ");
         }
         if (selection == 3)
@@ -64,7 +64,7 @@ public class ConversionApp
             System.out.println("Enter Ounces: ");
             double ounces = keyboard.nextDouble();
             keyboard.nextLine();
-            double milliliters = ounces * 0.03381402;
+            double milliliters = ounces * 29.5735296;
             System.out.println(ounces + " ounces is " + milliliters + " milliliters ");
         }
         if (selection == 6)
@@ -72,7 +72,7 @@ public class ConversionApp
             System.out.println("Enter Milliliters: ");
             double milliliters = keyboard.nextDouble();
             keyboard.nextLine();
-            double ounces = milliliters / 0.03381402;
+            double ounces = milliliters / 29.5735296;
             System.out.println(milliliters + " milliliters is " + ounces + " ounces ");
         }
         if (selection == 7)
